@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-Benz Kazakhstan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <h1>Mercedes-Benz</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Автомобили</a></li>
+                <li><a href="#">Покупка</a></li>
+                <li><a href="#">Аксессуары</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="#" id="openRegister">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Основной баннер -->
+    <section class="banner">
+        <img src="mercedes_benz_concept_cars_eq_landingpage_concept_car_vision_avtr_2176x1224_04_2022.jpg" alt="Mercedes-Benz car"> <!-- Замените banner-image.jpg на реальный баннер -->
+        <input type="text" placeholder="Поиск автомобиля">
+        <button>Поиск</button>
+    </section>
+
+    <!-- Модельный ряд -->
+    <section class="model-line">
+        <h2>Модельный ряд</h2>
+        <div class="model-cards">
+            <div class="model-card">
+                <img src="foto-a-class-4_01.jpg" alt="A-Class"> <!-- Замените на изображение A-Class -->
+                <p>A-Class</p>
+                <p>Стоимость от 26 400 000 тг.</p>
+            </div>
+            <div class="model-card">
+                <img src="images-_1_.jpg" alt="C-Class"> <!-- Замените на изображение C-Class -->
+                <p>C-Class</p>
+                <p>Стоимость от 27 300 000 тг.</p>
+            </div>
+            <div class="model-card">
+                <img src="images-_5_.jpg" alt="E-Class"> <!-- Замените на изображение E-Class -->
+                <p>E-Class</p>
+                <p>Стоимость от 26 000 000 тг.</p>
+            </div>
+            <div class="model-card">
+                <img src="images.jpg" alt="S-Class"> <!-- Замените на изображение S-Class -->
+                <p>S-Class</p>
+                <p>Стоимость от 71 900 000 тг.</p>
+            </div>
+            <div class="model-card">
+                <img src="W1K2239761A261360_1.jpg" alt="Maybach S-Class"> <!-- Замените на изображение Maybach -->
+                <p>Mercedes-Maybach S-Class</p>
+                <p>Стоимость от 91 400 000 тг.</p>
+            </div>
+            <div class="model-card">
+                <img src="cattouchretcr.jpg" alt="GLS-Class"> <!-- Замените на изображение GLS-Class -->
+                <p>GLS-Class</p>
+                <p>Стоимость от 55 400 000 тг.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Инструменты покупателя -->
+    <section class="tools">
+        <h2>Инструменты покупателя</h2>
+        <div class="tool-cards">
+            <div class="tool-card">
+                <img src="x68b8f8a58e6f60e1fa9d3741b32fb3823718e0e2.jpeg,q1.pagespeed.ic.ZzGalLw-_v.jpg" alt="Интернет-магазин"> <!-- Замените на изображение магазина -->
+                <p>Интернет-магазин</p>
+            </div>
+            <div class="tool-card">
+                <img src="avtoservis.jpg" alt="Запись на сервис"> <!-- Замените на изображение сервиса -->
+                <p>Запись на сервис</p>
+            </div>
+            <div class="tool-card">
+                <img src="images-_3_.jpg" alt="Выбрать дилера"> <!-- Замените на изображение дилера -->
+                <p>Выбрать дилера</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно регистрации -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Регистрация</h2>
+            <input type="text" id="username" placeholder="Имя пользователя">
+            <input type="password" id="password" placeholder="Пароль">
+            <button id="registerButton">Зарегистрироваться</button>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer>
+        <p>Mercedes-Benz Cars Kazakhstan 2024. Все права защищены</p>
+        <ul>
+            <li><a href="#">Правовая информация</a></li>
+            <li><a href="#">Cookie</a></li>
+            <li><a href="#">Защита данных</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+}
+
+.banner img {
+  width: 50%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.banner input[type="text"] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  width: 200px;
+}
+
+.banner button {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+}
+
+.model-line {
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.model-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.model-card {
+  background-color: #f9f9f9;
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+}
+
+.model-card img {
+  width: 100%;
+}
+
+.tools {
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.tool-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tool-card {
+  width: 200px;
+}
+
+.tool-card img {
+  width: 100%;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+ 
+/* Стили для модального окна */
+.modal {
+  display: none; /* Модальное окно скрыто по умолчанию */
+  position: fixed; /* Фиксированное позиционирование */
+  top: 0; /* Отступ от верхнего края */
+  left: 0; /* Отступ от левого края */
+  width: 100%; /* На всю ширину экрана */
+  height: 100%; /* На всю высоту экрана */
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+  z-index: 1000; /* Убедимся, что модальное окно на переднем плане */
+  display: flex; /* Используем flexbox для центрирования */
+  justify-content: center; /* Центрируем по горизонтали */
+  align-items: center; /* Центрируем по вертикали */
+  animation: fadeIn 0.3s ease-out; /* Плавная анимация появления */
+}
+
+/* Стили для самого окна */
+.modal-content {
+  position: relative; /* Чтобы можно было позиционировать кнопку закрытия */
+  background: #fff; /* Белый фон окна */
+  border-radius: 10px; /* Скругленные углы */
+  padding: 30px; /* Внутренние отступы */
+  width: 400px; /* Ширина модального окна */
+  max-width: 90%; /* Ограничение максимальной ширины */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тень для глубины */
+  overflow: hidden; /* Прячем лишний контент */
+}
+
+/* Кнопка закрытия */
+.close {
+  position: absolute;
+  top: 10px; /* Отступ от верхнего края */
+  right: 10px; /* Отступ от правого края */
+  font-size: 24px; /* Размер шрифта */
+  font-weight: bold; /* Жирное начертание */
+  color: #333; /* Цвет текста */
+  background: transparent; /* Без фона */
+  border: none; /* Без границы */
+  cursor: pointer; /* Курсор в виде руки */
+  transition: color 0.3s ease, transform 0.3s ease; /* Плавный переход */
+}
+
+.close:hover {
+  color: #f00; /* Красный цвет при наведении */
+  transform: scale(1.1); /* Увеличиваем кнопку при наведении */
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Стиль для содержимого внутри модального окна (например, форма) */
+.modal-content h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+ /* Пример формы внутри модального окна */
+ .modal-content input[type="text"], 
+ .modal-content input[type="password"] {
+   width: 100%;
+   padding: 12px;
+   margin: 10px 0;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 16px;
+ }
+ 
+ .modal-content button {
+   width: 100%;
+   padding: 12px;
+   background-color: #007bff;
+   color: white;
+   font-size: 16px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+ }
+ 
+ .modal-content button:hover {
+   background-color: #0056b3;
+  }
+  
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}

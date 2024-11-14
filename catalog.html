@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Каталог автомобилей</title>
+        <link rel="stylesheet" href="catalog.css">
+    </head>
+<body>
+
+    <header>
+        <h1>Каталог автомобилей</h1>
+        <a href="index.html">На главную</a>
+    </header>
+
+    <div class="sort-options">
+        <label for="sortPrice">Сортировать по цене:</label>
+        <select id="sortPrice">
+            <option value="asc">По возрастанию</option>
+            <option value="desc">По убыванию</option>
+        </select>
+    </div>
+
+    <div class="catalog">
+        <div class="car" data-price="26400000">
+            <p>A-Class</p>
+            <p>26 400 000 тг</p>
+        </div>
+        <div class="car" data-price="27300000">
+            <p>C-Class</p>
+            <p>27 300 000 тг</p>
+        </div>
+        <div class="car" data-price="26000000">
+            <p>E-Class</p>
+            <p>26 000 000 тг</p>
+        </div>
+        <div class="car" data-price="71900000">
+            <p>S-Class</p>
+            <p>71 900 000 тг</p>
+        </div>
+        <div class="car" data-price="91400000">
+            <p>Mercedes-Maybach S-Class</p>
+            <p>91 400 000 тг</p>
+        </div>
+        <div class="car" data-price="55400000">
+            <p>GLS-Class</p>
+            <p>55 400 000 тг</p>
+        </div>
+    </div>
+
+    <script src="catalog.js"></script>
+</body>
+</html>
